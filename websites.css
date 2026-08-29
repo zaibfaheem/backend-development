@@ -1,0 +1,35 @@
+.body{
+    background-color: rgb(174, 184, 180);
+}
+
+
+h1{
+    font-size: 30px;
+    text-align:center;
+    padding:10px;
+    font-weight: bold;
+    color: blueviolet;
+}
+h2{
+    font-size: 30px;
+    padding:10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 3px #ff0000;
+}
+.fvrt-websites a {
+    color: purple;
+}
+.fvrt-websites a:hover{
+    color: blue;
+}
+.fvrt-websites img{
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.fvrt-websites p {
+    color: rgb(63, 2, 2);
+    padding-left: 10px;
+}

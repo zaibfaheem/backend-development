@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size:xx-large ;
+}
+#marks-table{
+    border: solid black 1px ;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.table-style tr {
+    background-color: rgb(224, 224, 204);
+    
+}
+.table-style tr :hover{
+    background-color: greenyellow;
+}
+.table-style th {
+    border: solid black 1px;
+    background-color: goldenrod;
+}
+.table-style td {
+     border: solid black 1px ;
+    border-collapse: collapse;
+    text-align: center;
+}
