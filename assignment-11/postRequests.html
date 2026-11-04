@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Requests</title>
+    <link rel="stylesheet" href="postRequests.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Post Requests</h1>
+
+        <form id="postForm">
+
+            <input type="text" id="title" placeholder="Enter Title" required>
+
+            <textarea id="content" placeholder="Enter Content" required></textarea>
+
+            <input type="number" id="userId" placeholder="Enter User ID" required>
+
+            <button type="submit">Submit Post</button>
+
+        </form>
+
+        <div class="buttons">
+            <button id="putBtn">PUT Request</button>
+            <button id="patchBtn">PATCH Request</button>
+            <button id="deleteBtn">DELETE Request</button>
+        </div>
+
+        <h2>API Response</h2>
+        <pre id="result">Response will appear here...</pre>
+
+    </div>
+
+    <script src="postRequests.js"></script>
+</body>
+</html>

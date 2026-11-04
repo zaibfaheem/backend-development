@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+.main-header {
+    background: #253858;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.main-header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.main-header p {
+    color: #dbeafe;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 92%;
+    margin: 30px auto;
+}
+
+.form-section,
+.posts-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 18px;
+    color: #253858;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.reload-btn {
+    background: #475569;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    min-width: 0;
+}
+
+.post-card h3 {
+    color: #1d4ed8;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.post-card p {
+    overflow-wrap: anywhere;
+    margin-bottom: 8px;
+}
+
+.post-id {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.post-editor {
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 12px;
+}
+
+.post-editor label {
+    display: block;
+    font-size: 13px;
+}
+
+.post-editor textarea,
+.post-editor input {
+    margin-top: 5px;
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.card-actions button {
+    margin-top: 5px;
+}
+
+.patch-title-btn {
+    background: #0f766e;
+}
+
+.patch-body-btn {
+    background: #7c3aed;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+#message.success {
+    color: #15803d;
+}
+
+#message.error {
+    color: #dc2626;
+}
+
+#message.info {
+    color: #1d4ed8;
+}
+
+.empty-message {
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-header h1 {
+        font-size: 24px;
+    }
+
+    .form-section,
+    .posts-section {
+        padding: 18px;
+    }
+}
